@@ -5,6 +5,8 @@ project.lock.json
 *.pyc
 *.db
 ssl
+.db-shm
+.db-wal
 
 # Visual Studio Code
 .vscode
