@@ -9,15 +9,15 @@ namespace API.Helpers
     {
         public PaginationHeader(int currentPage, int itemsPerPage, int totalItems, int totalPages)
         {
-            CurrentPage = currentPage;
-            ItemsPerPage = itemsPerPage;
-            TotalItems = totalItems;
-            TotalPages = totalPages;
+            this.currentPage = currentPage;
+            this.itemsPerPage = itemsPerPage;
+            this.totalItems = totalItems;
+            this.totalPages = totalPages;
         }
 
-        public int CurrentPage { get; set; }
-        public int ItemsPerPage { get; set; }
-        public int TotalItems { get; set; }
-        public int TotalPages { get; set; }
+        public int currentPage { get; set; }
+        public int itemsPerPage { get; set; }
+        public int totalItems { get; set; }
+        public int totalPages { get; set; }
     }
 }
