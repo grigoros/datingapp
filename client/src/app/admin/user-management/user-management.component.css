@@ -1,0 +1,10 @@
+.btn {
+  background-color:rgb(57, 100, 243);
+}
+
+.btn:hover {
+  background-color:lightseagreen;
+  border-color: none;
+  box-shadow: none;
+  border: 0px;
+}
