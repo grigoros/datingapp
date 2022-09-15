@@ -33,14 +33,14 @@
         : '/members/' + message.senderUsername}}" [queryParams]="{tab: 3}">
       <td>{{message.content}}</td>
       <td>
-        <div *ngIf="container === Outbox">
+        <div *ngIf="container === 'Outbox'">
           <img
             class="img-circle rounded-circle mr-2"
             src="{{message.recipientPhotoUrl || './assets/user.png'}}" 
             alt="{{message.recipientUsername}}">
             <strong>{{message.recipientUsername | titlecase}}</strong>
         </div>
-        <div *ngIf="container !== Outbox">
+        <div *ngIf="container !== 'Outbox'">
           <img
             class="img-circle rounded-circle mr-2"
             src="{{message.senderPhotoUrl || './assets/user.png'}}" 
